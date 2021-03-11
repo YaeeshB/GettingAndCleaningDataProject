@@ -1,0 +1,45 @@
+---
+title: "Readme"
+author: "Me"
+date: "3/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Intro
+
+This is the course project for Getting and Cleaning data course from Cousera.
+
+The data used for this project is data from a phones sensors(accelerometer and gyroscope) captured while 30 people between the ages of 19-48 did a total of 6 different activities.
+
+
+
+##Body
+
+The raw data from the sensors form 561 variables which is included in both the mean, standard deviation and the second data sets.
+
+Included in this submission is the following:
+
+- features.txt: List of all features
+
+- activity_labels.txt: Links the class labels with their activity name.
+
+- X_train.txt: Training set.
+
+- y_train.txt: Training labels.
+
+- X_test.txt: Test set.
+
+- y_test.txt: Test labels.
+
+- run_analysis.R: A function for the purposes of combining the features.txt, activity_labels.txt, X_train.txt, y_train.txt, X_test.txt, y_test.txt into usable data and executing 3 functions:
+  1. Calculate the mean of the various columns
+  2. Calculate the standard deviation of each column
+  3. Create a tidy dataframe that comprises of 2 separate dataframes that could be used for further processing.
+  For convenience point 3 has been included into the analysis just in case I can't upload the dataframe for some reason.
+  
+  Please note for the purpose of this project a single dataframe was required instead of the 2 that should have been asked for. In order to meet this requirement I combined both the mean based on Activity with the mean based on Subject. Further analysis could make use of subsetting in order to extract the required data.
+
